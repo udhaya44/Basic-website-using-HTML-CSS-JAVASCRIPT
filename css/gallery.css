@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('../images/ocean-gallery.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/*back btn css*/
+.back-btn {
+  display: inline-block;
+  margin: 10px;
+  color: #007BFF;
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
+.back-btn:hover {
+  text-decoration: underline;
+  background-color: #eaeaea;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 32px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+div.gallery {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50vh;  /* 50% of the viewport height */
+}
+
+figure {
+  flex: 1;  /* equally divide the space for each box */
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 1%; /* little spacing between boxes */
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 80%;  /* allocate some space for the figcaption and buttons */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* ensures that the images cover the entire area of the box */
+  display: none;  /* hide all images by default */
+}
+
+.image-container img.active {
+  display: block; /* only show the active image */
+}
+
+figcaption {
+  margin-top: 10px;
+  color: #0a0a0a;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 20px;
+  z-index: 10;
+}
+
+.prev {
+  left: 5px;
+}
+
+.next {
+  right: 5px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}

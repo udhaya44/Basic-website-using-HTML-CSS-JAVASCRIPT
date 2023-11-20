@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('../images/ocean-fav.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/*back btn css*/
+.back-btn {
+  display: inline-block;
+  margin: 10px;
+  color: #007BFF;
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
+.back-btn:hover {
+  text-decoration: underline;
+  background-color: #eaeaea;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 32px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+div.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+div.favorite-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+div.favorite-section h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+div.favorite-section p {
+  font-size: 18px;
+  color: #333;
+  margin-top: 10px;
+}
+
+div.favorite-section audio,
+div.favorite-section video,
+div.favorite-section iframe {
+  width: 100%;
+  max-width: 560px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+div.favorite-section iframe {
+  border: none;
+}
+
+div.favorite-section video {
+  height: auto;
+}
+
+div.favorite-section #video1 {
+  height: 315px;  /* Adjusted to match the typical height of YouTube iframes */
+}
+
+/* Hover effects for a slightly interactive feel */
+div.favorite-section audio:hover,
+div.favorite-section video:hover,
+div.favorite-section iframe:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
